@@ -1,0 +1,107 @@
+.page {
+	width: 900px;
+	height: 100%;
+}
+
+.dataset {
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+.navigation {
+	margin-top: 15px;
+	background-color: #CCCCCC;
+	max-width: 900px;
+	min-width: 900px;
+	text-align: center;
+}
+
+.animation-appear {
+  left: -900px;
+}
+
+.animation-appear.animation-appear-active {
+  left: 0px;
+  transition: 1s ease;
+}
+
+@keyframes appear {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.navigation, .prev-navigation, .next-navigation, .page-navigation {
+	display: inline-block;
+}
+
+.navigation-button {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.navigation-button.round {
+	padding: 2px;
+	border: 2px solid black;
+	font-weight: bolder;
+}
+
+.results {
+	min-height: 600px;
+}
+
+thead tr th {
+	cursor: pointer;
+	padding: 10px;
+	border-bottom: 2px solid red;
+	min-width: 200px;
+	text-align: left;
+	max-height: 50px;
+} 
+
+tbody tr td {
+	padding: 5px 0 10px 10px;
+	border-bottom: 1px solid grey;
+	max-height: 50px;
+}
+
+.search {
+	width: 300px;
+	margin: 50px;
+}
+
+.filters {
+	margin-bottom: 25px;
+	float: left;
+}
+
+span.title {
+	font-size: 20px;
+	margin: 20px;
+}
+
+.filter-box {
+	width: 200px;
+	border: 1px solid #000055;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.filter-box.active {
+	background-color: #5F4B8B;
+	color: #FFF;
+}
+
+.addBox {
+	float: right;
+	text-align: right;
+}
+
+.addBox img {
+	cursor: pointer;
+	width: 25%;
+}
